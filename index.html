@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<title>SoftSell - Resell Your Software Licenses</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="hero" role="banner" aria-label="SoftSell hero section">
+  <h1>Resell Your Software Licenses with SoftSell</h1>
+  <p>Fast, secure, and profitable. Turn your unused software licenses into cash today!</p>
+  <button class="cta-btn" id="ctaButton" aria-label="Get a Quote">Get a Quote</button>
+</header>
+
+<main>
+  <section class="how-it-works" aria-labelledby="howWorksTitle" role="region">
+    <h2 id="howWorksTitle" class="section-title">How It Works</h2>
+    <article tabindex="0" class="step-card" aria-label="Step 1 Upload your software license">
+      <svg class="step-icon" viewBox="0 0 64 64" aria-hidden="true" focusable="false"><circle cx="32" cy="32" r="30" stroke="#00bfa6" stroke-width="3" fill="none"/><path d="M21 27h22M21 32h22M21 37h22" stroke="#00bfa6" stroke-width="3" stroke-linecap="round"/></svg>
+      <h3 class="step-title">Upload License</h3>
+      <p class="step-desc">Start by uploading your software license details securely through our platform.</p>
+    </article>
+    <article tabindex="0" class="step-card" aria-label="Step 2 Get a valuation">
+      <svg class="step-icon" viewBox="0 0 64 64" aria-hidden="true" focusable="false"><circle cx="32" cy="32" r="30" stroke="#00bfa6" stroke-width="3" fill="none"/><path d="M20 37l10-10 14 14" stroke="#00bfa6" stroke-width="4" fill="none" stroke-linecap="round"/></svg>
+      <h3 class="step-title">Get Valuation</h3>
+      <p class="step-desc">Our experts provide a competitive price for your licenses based on current market trends.</p>
+    </article>
+    <article tabindex="0" class="step-card" aria-label="Step 3 Get paid quickly">
+      <svg class="step-icon" viewBox="0 0 64 64" aria-hidden="true" focusable="false"><circle cx="32" cy="32" r="30" stroke="#00bfa6" stroke-width="3" fill="none"/><path d="M32 18v12" stroke="#00bfa6" stroke-width="3" stroke-linecap="round"/><path d="M26 30h12l-3 10 -6 0z" stroke="#00bfa6" stroke-width="3" fill="#00bfa6"/></svg>
+      <h3 class="step-title">Get Paid</h3>
+      <p class="step-desc">Receive payment directly to your account fast and hassle-free.</p>
+    </article>
+  </section>
+
+  <section class="why-choose-us" aria-labelledby="whyChooseTitle" role="region">
+    <h2 id="whyChooseTitle" class="section-title">Why Choose SoftSell?</h2>
+    <article tabindex="0" class="reason-card" aria-label="Secure and trustworthy">
+      <div class="reason-icon" aria-hidden="true">🔒</div>
+      <h3 class="reason-title">Secure & Trustworthy</h3>
+      <p class="reason-desc">We ensure full confidentiality and secure transactions so you can sell with confidence.</p>
+    </article>
+    <article tabindex="0" class="reason-card" aria-label="Best prices guaranteed">
+      <div class="reason-icon" aria-hidden="true">💰</div>
+      <h3 class="reason-title">Best Prices Guaranteed</h3>
+      <p class="reason-desc">Get top market value for your software licenses thanks to our deep industry knowledge.</p>
+    </article>
+    <article tabindex="0" class="reason-card" aria-label="Quick and hassle-free">
+      <div class="reason-icon" aria-hidden="true">⚡</div>
+      <h3 class="reason-title">Quick & Hassle-Free</h3>
+      <p class="reason-desc">Sell your licenses fast with a smooth, easy-to-use platform designed for simplicity.</p>
+    </article>
+    <article tabindex="0" class="reason-card" aria-label="Expert support">
+      <div class="reason-icon" aria-hidden="true">🤝</div>
+      <h3 class="reason-title">Expert Support</h3>
+      <p class="reason-desc">Our team of experts is ready to assist you at every step for maximum value and ease.</p>
+    </article>
+  </section>
+
+  <section class="testimonials" aria-labelledby="testimonialsTitle" role="region">
+    <h2 id="testimonialsTitle" class="section-title">What Our Customers Say</h2>
+    <article class="testimonial-card" tabindex="0" aria-label="Testimonial from Alice Johnson, CTO at TechSolutions">
+      <p class="testimonial-text">"SoftSell made the entire license resale process seamless and transparent. We sold our unused licenses easily and got paid quickly."</p>
+      <div class="testimonial-author">Alice Johnson</div>
+      <div class="testimonial-role">CTO, TechSolutions</div>
+    </article>
+    <article class="testimonial-card" tabindex="0" aria-label="Testimonial from Marcus Lee, IT Manager at Innovatech">
+      <p class="testimonial-text">"I highly recommend SoftSell! Their valuation service was spot on, and the support team helped us every step of the way."</p>
+      <div class="testimonial-author">Marcus Lee</div>
+      <div class="testimonial-role">IT Manager, Innovatech</div>
+    </article>
+  </section>
+
+  <section aria-labelledby="contactTitle" role="region">
+    <form class="contact-form" id="leadForm" novalidate aria-describedby="formInstructions">
+      <h2 id="contactTitle">Contact Us / Get a Quote</h2>
+      <p id="formInstructions" style="text-align:center; font-size:0.9rem; color:#555; margin-top:-10px;">Please fill out the form and we'll get back to you shortly.</p>
+
+      <label for="name">Name<span aria-hidden="true" style="color:#be3144;"> *</span></label>
+      <input type="text" id="name" name="name" placeholder="Your full name" required aria-required="true" />
+      <div class="error-msg" id="errorName"></div>
+
+      <label for="email">Email<span aria-hidden="true" style="color:#be3144;"> *</span></label>
+      <input type="email" id="email" name="email" placeholder="example@yourdomain.com" required aria-required="true" />
+      <div class="error-msg" id="errorEmail"></div>
+
+      <label for="company">Company<span aria-hidden="true" style="color:#be3144;"> *</span></label>
+      <input type="text" id="company" name="company" placeholder="Your company name" required aria-required="true" />
+      <div class="error-msg" id="errorCompany"></div>
+
+      <label for="licenseType">License Type<span aria-hidden="true" style="color:#be3144;"> *</span></label>
+      <select id="licenseType" name="licenseType" required aria-required="true">
+        <option value="" disabled selected>Select license type</option>
+        <option value="single-user">Single User License</option>
+        <option value="multi-user">Multi User License</option>
+        <option value="enterprise">Enterprise License</option>
+        <option value="subscription">Subscription License</option>
+        <option value="other">Other</option>
+      </select>
+      <div class="error-msg" id="errorLicense"></div>
+
+      <label for="message">Message (optional)</label>
+      <textarea id="message" name="message" placeholder="Additional details or questions..."></textarea>
+
+      <button class="submit-btn" type="submit" aria-label="Submit contact form">Submit</button>
+    </form>
+  </section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
+

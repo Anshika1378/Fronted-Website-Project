@@ -1,0 +1,291 @@
+  /* Reset & base */
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0; padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f5f7fa;
+    color: #222;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  img {
+    max-width: 100%;
+    display: block;
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  /* Container */
+  .container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-bottom: 40px;
+  }
+
+  /* Hero Section */
+  header.hero {
+    background: linear-gradient(140deg, #4979ff 0%, #1c2e8f 100%);
+    color: #fff;
+    text-align: center;
+    padding: 60px 20px 80px;
+    border-radius: 0 0 40px 40px;
+  }
+  header.hero h1 {
+    font-size: 2.8rem;
+    margin-bottom: 0.3em;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+  }
+  header.hero p {
+    font-size: 1.15rem;
+    font-weight: 300;
+    margin-bottom: 1.8em;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.9;
+  }
+  header.hero button.cta-btn {
+    background: #00bfa6;
+    border: none;
+    padding: 14px 28px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 36px;
+    cursor: pointer;
+    transition: background-color 0.25s ease;
+    box-shadow: 0 6px 12px rgba(0,191,166,0.4);
+  }
+  header.hero button.cta-btn:hover,
+  header.hero button.cta-btn:focus {
+    background: #009e8f;
+    outline: none;
+  }
+
+  /* Section Titles */
+  h2.section-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-align: center;
+    margin: 50px 0 30px;
+    color: #1c2e8f;
+  }
+
+  /* How It Works Section */
+  .how-it-works {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 24px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  .step-card {
+    background: white;
+    flex: 1 1 250px;
+    border-radius: 16px;
+    padding: 24px 16px;
+    box-shadow: 0 5px 18px rgb(28 46 143 / 0.15);
+    text-align: center;
+    transition: box-shadow 0.3s ease;
+  }
+  .step-card:hover,
+  .step-card:focus-within {
+    box-shadow: 0 8px 26px rgb(0 191 166 / 0.3);
+    outline: none;
+  }
+  .step-icon {
+    width: 64px;
+    height: 64px;
+    margin: 0 auto 16px;
+    stroke: #00bfa6;
+    stroke-width: 1.8;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+  .step-title {
+    font-weight: 700;
+    font-size: 1.15rem;
+    margin-bottom: 8px;
+    color: #1c2e8f;
+  }
+  .step-desc {
+    font-weight: 400;
+    font-size: 0.94rem;
+    color: #444;
+  }
+
+  /* Why Choose Us Section */
+  .why-choose-us {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  .reason-card {
+    background: white;
+    border-radius: 16px;
+    flex: 1 1 260px;
+    box-shadow: 0 5px 15px rgb(28 46 143 / 0.12);
+    padding: 20px 18px;
+    text-align: center;
+    transition: box-shadow 0.25s ease;
+  }
+  .reason-card:hover,
+  .reason-card:focus-within {
+    box-shadow: 0 8px 22px rgb(0 191 166 / 0.33);
+    outline: none;
+  }
+  .reason-icon {
+    font-size: 48px;
+    color: #00bfa6;
+    margin-bottom: 14px;
+  }
+  .reason-title {
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-bottom: 6px;
+    color: #1c2e8f;
+  }
+  .reason-desc {
+    font-size: 0.9rem;
+    color: #333;
+  }
+
+  /* Customer Testimonials */
+  .testimonials {
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 40px;
+    gap: 18px;
+    display: flex;
+    flex-direction: column;
+  }
+  .testimonial-card {
+    background: white;
+    border-radius: 14px;
+    padding: 22px 20px;
+    box-shadow: 0 4px 18px rgb(28 46 143 / 0.15);
+  }
+  .testimonial-text {
+    font-style: italic;
+    color: #555;
+    font-size: 1rem;
+    margin-bottom: 16px;
+  }
+  .testimonial-author {
+    font-weight: 700;
+    color: #1c2e8f;
+  }
+  .testimonial-role {
+    font-weight: 500;
+    font-size: 0.9rem;
+    color: #777;
+  }
+
+  /* Contact Form Section */
+  form.contact-form {
+    background: white;
+    max-width: 500px;
+    margin: 40px auto 60px;
+    padding: 30px 28px;
+    border-radius: 20px;
+    box-shadow: 0 7px 28px rgb(0 191 166 / 0.3);
+  }
+  form.contact-form h2 {
+    text-align: center;
+    margin-bottom: 24px;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #1c2e8f;
+  }
+  form.contact-form label {
+    display: block;
+    margin-bottom: 4px;
+    font-weight: 600;
+    color: #333;
+    font-size: 0.95rem;
+    margin-top: 14px;
+  }
+  form.contact-form input[type="text"],
+  form.contact-form input[type="email"],
+  form.contact-form select,
+  form.contact-form textarea {
+    width: 100%;
+    border: 2px solid #ccc;
+    border-radius: 14px;
+    padding: 10px 14px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+    resize: vertical;
+    font-family: inherit;
+  }
+  form.contact-form input[type="text"]:focus,
+  form.contact-form input[type="email"]:focus,
+  form.contact-form select:focus,
+  form.contact-form textarea:focus {
+    border-color: #00bfa6;
+    outline: none;
+  }
+  form.contact-form textarea {
+    min-height: 90px;
+    max-height: 160px;
+  }
+  form.contact-form button.submit-btn {
+    background: #1c2e8f;
+    color: white;
+    border: none;
+    padding: 14px 24px;
+    margin-top: 24px;
+    font-size: 1.15rem;
+    font-weight: 700;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: background-color 0.25s ease;
+    width: 100%;
+    box-shadow: 0 8px 16px rgb(28 46 143 / 0.5);
+  }
+  form.contact-form button.submit-btn:hover,
+  form.contact-form button.submit-btn:focus {
+    background: #4979ff;
+    outline: none;
+  }
+  .error-msg {
+    color: #be3144;
+    font-size: 0.9rem;
+    margin-top: 3px;
+  }
+
+  /* Responsive */
+  @media (max-width: 600px) {
+    header.hero h1 {
+      font-size: 2.2rem;
+    }
+    .how-it-works {
+      flex-direction: column;
+      gap: 18px;
+      max-width: 100%;
+    }
+    .why-choose-us {
+      flex-direction: column;
+      max-width: 100%;
+    }
+    .reason-card,
+    .step-card {
+      flex-basis: 100%;
+    }
+    form.contact-form {
+      width: 90%;
+      max-width: 100%;
+      padding: 24px 20px;
+    }
+  }
